@@ -7,7 +7,7 @@ Easily **scrape** any type of proxy and connect to them with **user-friendly** G
 https://user-images.githubusercontent.com/85416153/175831112-ebae7cea-efa0-46db-bf3e-63d2533b2dcc.mp4
 
 # Scraping
-> **LProxy** has built-in proxy scraper feature. Pick up an one of proxy type (**elite, anonymous, transparent**) in settings then we'll scrape it. Pick up proxy you want to connect. Ready to **go**. (Scrape API provided by [https://docs.proxyscrape.com/]proxyscrape)
+> **LProxy** has built-in proxy scraper feature. Pick up an one of proxy type (**elite, anonymous, transparent**) in settings then we'll scrape it. Pick up proxy you want to connect. Ready to **go**. (Scrape API provided by [https://docs.proxyscrape.com/](proxyscrape)
 
 > If you want load custom proxies, we support this too. **Load your proxies** as `proxy:port` format and pick up file in **settings**.
 
