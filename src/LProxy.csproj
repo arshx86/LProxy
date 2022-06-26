@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84C41645-48A0-4D53-8128-C5E3FC8921E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LProxy</RootNamespace>
+    <AssemblyName>LProxy</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_anonymous_mask.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\Models.cs" />
+    <Compile Include="Util\Server.cs" />
+    <Compile Include="Util\Utils.cs" />
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_address.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cloud_firewall_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_settings_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_shield_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_cloud_firewall.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\level_anonymous.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\level_elite.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\level_transparent.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_web_address.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_connected.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_connected_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_replace.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_socks.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Tor_Browser.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_Tor_Browser_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_secure.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_question_mark.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_secure1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8_anonymous_mask.ico" />
+    <None Include="Resources\icons8_ok1.ico" />
+    <None Include="Resources\icons8_ok.ico" />
+    <None Include="Resources\icons8_broom1.ico" />
+    <None Include="Resources\icons8_broom.ico" />
+    <None Include="Resources\icons8_onedrive.ico" />
+    <None Include="Resources\icons8_download_from_the_cloud.ico" />
+    <None Include="Resources\icons8_github_11.ico" />
+    <None Include="Resources\icons8_folder1.ico" />
+    <None Include="Resources\icons8_github_1.ico" />
+    <None Include="Resources\icons8_github.ico" />
+    <None Include="Resources\icons8_anonymous_mask.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Guna.UI2.WinForms">
+      <Version>2.0.3.2</Version>
+    </PackageReference>
+    <PackageReference Include="Leaf.xNet">
+      <Version>5.2.10</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
